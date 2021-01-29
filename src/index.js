@@ -1,15 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {JobContext} from './context/job'
-// import { BrowserRouter as Router } from 'react-router-dom';
-import App from './app'
+import App from './App'
+// import { JobContext } from './context/jobContext';
+import { UseContent } from './hook/use-content';
 
-ReactDOM.render(    
-    <JobContext.Provider>
-        <App/>
-    </JobContext.Provider>
-   
-    , document.getElementById("root"));
+ReactDOM.render( 
+<UseContent>
+    <App/>
+</UseContent>
+, document.getElementById("root"));
 
 
 
