@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Link, CardLogo, CardGroup, Logo, Location, Title,Type, JobMeta, JobLocation, Icon, Time} from './styles/job'
+import {Container, Link, Card, CardGroup, Logo, Location, Title,Type, JobMeta, JobLocation, Icon, Time} from './styles/job'
 
 export default function Job({children, ...restProps}) {
     return <Container {...restProps}>{children}</Container>
@@ -12,7 +12,7 @@ Job.Link = function JobLink({children, ...restProps}) {
     return <Link {...restProps}>{children}</Link>
 }
 Job.CardLogo = function JobCardLogo({children, ...restProps}) {
-    return <CardLogo {...restProps}>{children}</CardLogo>
+    return <Card {...restProps}>{children}</Card>
 }
 Job.Logo = function JobLogo({children, ...restProps}) {
     return <Logo {...restProps}>{children}</Logo>

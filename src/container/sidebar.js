@@ -1,5 +1,6 @@
 import React, {useState, useContext, useEffect} from 'react'
-import {JobContext} from '../context/jobContext'
+// import {JobContext} from '../context/jobContext'
+import {JobContext} from '../hook/use-content'
 import { Sidebar }from '../components'
 
 export default function SidebarContainer() {

@@ -1,5 +1,6 @@
-import React, { createContext, useReducer } from 'react'
-import {JobContext} from '../context/jobContext'
+import React, { useReducer, createContext } from 'react'
+const JobContext = createContext();
+// import {JobContext} from '../context/jobContext'
 
 function UseContent({ children }) {
     const [state, dispatch] = useReducer((state, action) => {

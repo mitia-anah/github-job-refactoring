@@ -12,18 +12,21 @@ export default function FormContainer() {
 
     return (
         <Form>
-            <Form.Fieldset>
-                <Form.Input
-                 type="text"
-                 value={description}
-                 onChange={(e) => setDescription(e.target.value)}
-                 placeholder="Title, companies, expertise"
-                 onKeyDown={handleSearch}
-                />
-                <Form.Submit>
-                    Search
-                </Form.Submit>
-            </Form.Fieldset>
+            <Form.FormStyled>
+                <Form.Fieldset>
+                    <Form.Input
+                    type="text"
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    placeholder="Title, companies, expertise"
+                    onKeyDown={handleSearch}
+                    />
+                    <Form.Submit>
+                        Search
+                    </Form.Submit>
+                </Form.Fieldset>
+            </Form.FormStyled>
+
         </Form>
     )
 }

@@ -7,6 +7,11 @@ export const Background = styled.header`
     margin-block-end: 3rem;
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div`
+background-image: url('./backgroundImg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-block-end: 3rem;
+`;
 
 export const Title = styled.h1``;
