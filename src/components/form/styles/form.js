@@ -1,21 +1,34 @@
 import styled from 'styled-components'
 
 export const FormStyled = styled.form`
-    background-image: url('./images/backgroundImg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-block-end: 3rem;
-    padding: 3rem
+display: flex;
+justify-content: center;
+align-items: center;
+background: url("./images/backgroundImg.png");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+border-radius: 8px;
+height: 138px;
+margin: 0 auto;
+margin-top: 32px;
+padding: 0 18px;
 `;
 
 export const Container = styled.div`
-margin: auto;
-padding: 2rem;
+
 `;
 
 export const Input = styled.input`
-border-style: none;
-width: 100%;
+    font-family: "Roboto",sans-serif;
+    margin-left: 10px;
+    margin-right: 24px;
+    padding: 0 4px;
+    height: 32px;
+    border: none;
+    background: transparent;
+    flex: 2 1;
+}
 `;
 
 export const Submit = styled.button`
@@ -23,16 +36,14 @@ export const Submit = styled.button`
     border-radius: 4px;
     color: #ffffff;
     width: 100px;
-    
     padding:0.5rem;
     border-style: none;`;
 
 export const Fieldset = styled.fieldset`
-    background: #FFFFFF;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-grow:1;
+    padding:1rem;
+    background-color: #fff;
     border-radius: 4px;
     border-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 `;

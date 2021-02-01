@@ -6,7 +6,7 @@ export default function HeaderContainer() {
 	return (
 		<Header >
 			<Header.Title>
-				Github Job
+				Github <span>Job</span>
 			</Header.Title>
 		</Header>
 	);

@@ -1,10 +1,13 @@
 import React from 'react'
-import {Container, Label, Input, Cities, CitiInner} from './styles/sidebar'
+import {Container, Label, Input, Cities, CitiInner, SidebarWrapper} from './styles/sidebar'
 
 export default function Sidebar({children, ...restProps}) {
     return <Container {...restProps}>{children}</Container>
 }
 
+Sidebar.SidebarWrapper = function SidebarSidebarWrapper({children, ...restProps}) {
+    return <SidebarWrapper {...restProps}>{children}</SidebarWrapper>
+}
 Sidebar.Label = function SidebarLabel({children, ...restProps}) {
     return <Label {...restProps}>{children}</Label>
 }

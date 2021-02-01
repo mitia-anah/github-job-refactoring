@@ -1,0 +1,16 @@
+/* .home {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 800px) {
+    .home {
+        display: flex;
+        flex-direction: row;
+    }
+} */
+
+body {
+    background-color: #F6F7FB ;
+}

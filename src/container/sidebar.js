@@ -58,7 +58,7 @@ export default function SidebarContainer() {
 
 
     return (
-        <Sidebar>
+        <Sidebar.SidebarWrapper>
             <Sidebar.Label>
                 <Sidebar.Input
                 type="checkbox"
@@ -94,6 +94,6 @@ export default function SidebarContainer() {
             </Sidebar.Cities>
 
 
-        </Sidebar>
+        </Sidebar.SidebarWrapper>
     )
 }

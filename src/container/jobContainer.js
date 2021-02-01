@@ -7,6 +7,7 @@ import { formatDistance } from "date-fns";
 export default function JobContainer() {
     const { state, dispatch } = useContext(JobContext)
     const { jobs, loading, description, fulltime, location } = state
+    
 
     const formattedDate = (date) => {
         return formatDistance(new Date(date), new Date());
@@ -27,7 +28,7 @@ export default function JobContainer() {
         <Job>
             {loading && <p>Loading...</p>}
             {!loading && jobs.map(list => (
-                <Job.Link to={`job/${list.id}`} href={list.company_url} key={list.id} className="job">
+                <Job.Link to={`/job/${list.id}`} href={list.company_url} key={list.id} className="job">
                     <Job.CardGroup key={list.id}>
                         <Job.Logo src={list.company_logo} />
                         <Job.Card>
